@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="fonts/css/all.css">
+  <link rel="stylesheet" href="css/stylef.css">
+  <title>گالری</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-right">
+        <a href=""><i class="far fa-user"></i></a>
+        <a href="shop.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href=""><i class="fas fa-search"></i></a>
+      </div>
+      <div class="nav-left">
+        <div class="register-login-btn">
+          <i class="fas fa-user"></i>
+          <a href="login.html">ثبت نام / ورود</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="full-img" id="fullImgBox">
+    <img src="img/g1.jpg" id="fullImg" alt="">
+    <span onclick="closeFullImg()"><i class="fa-solid fa-rectangle-xmark"></i></span>
+  </div> 
+  <div class="img-gallery">
+    <img src="img/g7.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g5.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g3.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g14.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g10.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g8.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g13.jpg" onclick="openFullImg(this.src)" alt="">
+    <img src="img/g12.jpg" onclick="openFullImg(this.src)" alt="">
+  </div>
+  <script>
+    var fullImgBox =document.getElementById("fullImgBox");
+    var fullImg =document.getElementById("fullImg");
+
+    function openFullImg(pic){
+      fullImgBox.style.display = "flex";
+      fullImg.src =pic;
+    }
+
+    function closeFullImg(){
+      fullImgBox.style.display = "none";
+
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  font-size: 1em;
+  border-bottom: 1px solid #d39b59;
+}
+
+/* navigation section  */
+
+header nav{
+  display: flex;
+  justify-content: space-between ;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+header nav .nav-right{
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-right a{
+  color: #d39b59;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  font-size: 1.1em;
+  
+}
+
+
+header nav .nav-left .register-login-btn{
+  border: 1px solid #d39b59;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+header nav .nav-left .register-login-btn i{
+  margin: 7px;
+  color: #d39b59;
+  font-size: 1.1em;
+
+}
+
+header nav .nav-left .register-login-btn a{
+  color: white;
+  margin: 0px 10px;
+  font-size: .9em;
+  text-decoration: none;
+}
+
+.img-gallery{
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 30px;
+}
+.img-gallery img{
+  width: 100%;
+  cursor: pointer;
+  height: 400px;
+}
+.img-gallery img:hover{
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px #d39b59;
+}
+.full-img{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img img{
+  width: 100%;
+  max-width: 500px;
+}
+.full-img span i{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #d39b59;
+  cursor: pointer;
+}
